@@ -5,9 +5,12 @@
     box-sizing: border-box;
 }
 
-/* Apply a font to the entire body */
+/* Apply a font to the entire body and set up flex layout */
 body {
     font-family: 'Arial', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* This ensures the body is at least as tall as the viewport */
 }
 
 /* Style the header */
@@ -27,6 +30,11 @@ nav a {
 
 /* Style for the main content area */
 main {
+    flex-grow: 1; /* Allows the main content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
     padding: 2em; /* Add some padding around the content */
     text-align: center; /* Center text */
 }
@@ -36,9 +44,6 @@ footer {
     background: #333; /* Match the header */
     color: #fff;
     text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
     padding: 0.5em 0; /* Padding for the footer */
 }
 

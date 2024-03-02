@@ -31,12 +31,18 @@ nav a {
 /* Style for the main content area */
 main {
     flex-grow: 1; /* Allows the main content to grow and fill available space */
-    display: flex;
-    flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
     padding: 2em; /* Add some padding around the content */
-    text-align: center; /* Center text */
+}
+
+/* Style for the individual sections */
+.section {
+    margin: 1em; /* Adds margin around each section */
+    padding: 1em; /* Adds padding inside each section */
+    background-color: #f7f7f7; /* Light grey background for separation */
+    border-radius: 5px; /* Slightly rounded corners for aesthetics */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
+    width: calc(100% - 4em); /* Full width minus margin */
+    text-align: left; /* Align text to the left within each section */
 }
 
 /* Footer styles */
@@ -50,4 +56,19 @@ footer {
 /* Add spacing between paragraphs */
 p {
     margin-bottom: 1em;
+    line-height: 1.6; /* Improved line height for readability */
+}
+
+/* Additional styles for headings */
+h1, h2 {
+    margin: 0.5em 0; /* Space above and below headings */
+}
+
+h1 {
+    font-size: 2.5rem; /* Larger font size for main heading */
+}
+
+h2 {
+    font-size: 1.8rem; /* Smaller font size for subheading */
+    color: #555; /* Subtle color for subheading */
 }

@@ -1,46 +1,48 @@
-/* Add this CSS in your styles.css file */
-body, html {
+/* Reset default padding and margins */
+* {
     margin: 0;
     padding: 0;
-    height: 100%;
     box-sizing: border-box;
 }
 
-/* This will create a flex container that centers its children vertically and horizontally */
+/* Apply a font to the entire body */
 body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Style the header */
+header {
+    background: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 1em 0; /* Add some vertical padding */
+    text-align: center; /* Center the text */
+}
+
+/* Add some styling to your navigation links if they are in a nav element */
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em; /* Spacing between links */
+}
+
+/* Style for the main content area */
+main {
+    padding: 2em; /* Add some padding around the content */
+    text-align: center; /* Center text */
+}
+
+/* Footer styles */
+footer {
+    background: #333; /* Match the header */
+    color: #fff;
     text-align: center;
-    font-family: Arial, sans-serif;
-    min-height: 100vh; /* This ensures that the body is at least the height of the viewport */
-}
-
-/* Style for the title */
-p:first-child {
-    font-weight: bold;
-    font-size: 24px; /* Adjust the size as needed */
-    margin-top: 0; /* Removes the top margin */
-}
-
-/* Style for secondary titles or important text */
-p:nth-child(2) {
-    font-size: 20px; /* Adjust the size as needed */
-    font-style: italic;
-}
-
-/* Style for the main content paragraph */
-p:nth-child(3) {
-    font-size: 16px; /* Adjust the size as needed */
-    margin-bottom: 0; /* Removes the bottom margin */
-}
-
-/* Footer or bottom ribbon styles, if applicable */
-.footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    /* Add other styling for your footer here */
+    padding: 0.5em 0; /* Padding for the footer */
 }
 
+/* Add spacing between paragraphs */
+p {
+    margin-bottom: 1em;
+}

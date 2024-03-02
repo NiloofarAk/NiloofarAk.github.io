@@ -1,1 +1,46 @@
+/* Add this CSS in your styles.css file */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* This will create a flex container that centers its children vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    min-height: 100vh; /* This ensures that the body is at least the height of the viewport */
+}
+
+/* Style for the title */
+p:first-child {
+    font-weight: bold;
+    font-size: 24px; /* Adjust the size as needed */
+    margin-top: 0; /* Removes the top margin */
+}
+
+/* Style for secondary titles or important text */
+p:nth-child(2) {
+    font-size: 20px; /* Adjust the size as needed */
+    font-style: italic;
+}
+
+/* Style for the main content paragraph */
+p:nth-child(3) {
+    font-size: 16px; /* Adjust the size as needed */
+    margin-bottom: 0; /* Removes the bottom margin */
+}
+
+/* Footer or bottom ribbon styles, if applicable */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /* Add other styling for your footer here */
+}
 

@@ -34,25 +34,25 @@ nav a {
 
 /* Style for the main content area */
 main {
-    flex-grow: 1; /* Allows the main content to grow and fill available space */
+    flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Center vertically */
-    align-items: center; /* Center horizontally */
-    padding: 2em; /* Add some padding around the content */
-    text-align: center; /* Center text */
+    justify-content: center;
+    align-items: center; /* Center the child sections horizontally */
+    padding: 2em;
+    text-align: center;
 }
 
-/* Style for the individual sections */
 .section {
-    margin: 1em; /* Adds margin around each section */
-    padding: 1em; /* Adds padding inside each section */
-    background-color: #f7f7f7; /* Light grey background for separation */
-    border-radius: 5px; /* Slightly rounded corners for aesthetics */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
-    width: calc(100% - 4em); /* Full width minus margin */
-    text-align: left; /* Align text to the left within each section */
+    width: calc(100% - 4em); /* Adjust width as necessary */
+    margin: 1em auto; /* Top and bottom margin 1em, left and right auto for centering */
+    padding: 1em;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: left; /* Text alignment inside the section */
 }
+
 
 /* Footer styles */
 footer {

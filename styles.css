@@ -11,6 +11,13 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh; /* This ensures the body is at least as tall as the viewport */
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0 1em; /* Spacing between links */
+    text-align: right; /* Align text to the right */
+}
 }
 
 /* Style the header */
@@ -25,12 +32,6 @@ header {
 }
 
 /* Add some styling to your navigation links if they are in a nav element */
-nav a {
-    color: #fff;
-    text-decoration: none;
-    padding: 0 1em; /* Spacing between links */
-    text-align: right; /* Align text to the right */
-}
 
 /* Style for the main content area */
 main {

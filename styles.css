@@ -40,18 +40,17 @@ main {
     text-align: center;
 }
 
-/* Styles for the sections */
 .section {
-    width: calc(100% - 4em); /* Adjust width as necessary */
+    width: calc(100% - 4em); 
     margin: 1em auto; /* Top and bottom margin 1em, left and right auto for centering */
     padding: 1em;
     background-color: #f7f7f7;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    text-align: left; /* Text alignment inside the section */
+    text-align: left; 
 }
 
-/* Footer styles */
+
 footer {
     background: #333; /* Match the navigation */
     color: #fff;

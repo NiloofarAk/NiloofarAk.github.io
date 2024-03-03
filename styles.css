@@ -1,9 +1,11 @@
+/* Reset default padding and margins */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Apply a font to the entire body */
 body {
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -11,22 +13,34 @@ body {
     min-height: 100vh; /* This ensures the body is at least as tall as the viewport */
 }
 
+/* Style the header */
 header {
-    background: #333; 
-    color: #fff;
-    padding: 1em 0; 
-    text-align: center; 
+    background: #333; /* Dark background for the header */
+    color: #fff; /* White text color */
+    padding: 1em 0; /* Add some vertical padding */
+    text-align: center; /* Center the text */
+    display: flex; /* Use flexbox to lay out children */
+    justify-content: flex-end; /* Align children to the end (right side for row direction) */
+    padding-right: 1em; /* Add padding on the right side */
 }
 
+/* Add some styling to your navigation links if they are in a nav element */
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0 1em; 
+    padding: 0 1em; /* Spacing between links */
+    text-align: right; /* Align text to the right */
 }
 
+/* Style for the main content area */
 main {
-    flex-grow: 1; 
-    padding: 2em; 
+    flex-grow: 1; /* Allows the main content to grow and fill available space */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    padding: 2em; /* Add some padding around the content */
+    text-align: center; /* Center text */
 }
 
 /* Style for the individual sections */
@@ -37,30 +51,33 @@ main {
     border-radius: 5px; /* Slightly rounded corners for aesthetics */
     box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow for depth */
     width: calc(100% - 4em); /* Full width minus margin */
-    text-align: left; /
+    text-align: left; /* Align text to the left within each section */
 }
 
+/* Footer styles */
 footer {
-    background: #333; 
+    background: #333; /* Match the header */
     color: #fff;
     text-align: center;
-    padding: 0.5em 0; 
+    padding: 0.5em 0; /* Padding for the footer */
 }
 
+/* Add spacing between paragraphs */
 p {
     margin-bottom: 1em;
-    line-height: 1.6; 
+    line-height: 1.6; /* Improved line height for readability */
 }
 
+/* Additional styles for headings */
 h1, h2 {
-    margin: 0.5em 0; 
+    margin: 0.5em 0; /* Space above and below headings */
 }
 
 h1 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem; /* Larger font size for main heading */
 }
 
 h2 {
-    font-size: 1.8rem; /
-    color: #555; 
+    font-size: 1.8rem; /* Smaller font size for subheading */
+    color: #555; /* Subtle color for subheading */
 }

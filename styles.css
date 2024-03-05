@@ -77,3 +77,29 @@ h2 {
     font-size: 1.8rem; /* Smaller font size for subheading */
     color: #555; /* Subtle color for subheading */
 }
+
+.project {
+    margin: 2em auto;
+    padding: 1em;
+    background-color: #f7f7f7;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 800px; /* Adjust as needed for your layout */
+    text-align: left;
+}
+
+.project h2 {
+    color: #333;
+    margin-bottom: 0.5em;
+}
+
+.project p {
+    margin-bottom: 1em;
+    line-height: 1.6;
+}
+
+.project a {
+    color: #0066cc;
+    text-decoration: none;
+    font-weight: bold;
+}

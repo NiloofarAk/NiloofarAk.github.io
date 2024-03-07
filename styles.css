@@ -1,66 +1,62 @@
-/* Reset default padding and margins */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Apply a font to the entire body */
 body {
     background-color: #121212; 
     color: #333;
     font-family: 'Arial', sans-serif;
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* This ensures the body is at least as tall as the viewport */
+    min-height: 100vh; /
 }
 
 a, .highlight {
-    color: #4DB6AC; /* Accent color for links and highlights */
-    text-decoration: none; /* Optional: removes underline from links */
+    color: #4DB6AC; 
+    text-decoration: none;
 }
 
-/* Style for the navigation links */
+
 nav {
-    background: #333; /* Dark background for the navigation */
-    color: #fff; /* White text color */
+    background: #333; 
+    color: #fff; 
     display: flex;
-    justify-content: flex-end; /* Align navigation links to the right */
-    padding: 1em; /* Add padding on all sides */
+    justify-content: flex-end; 
+    padding: 1em; 
 }
 
-/* Add some styling to your navigation links */
 nav a {
     color: #fff;
     text-decoration: none;
-    padding: 0 1em; /* Spacing between links */
+    padding: 0 1em; 
 }
 
-/* Style for the main content area */
 main {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; /* Center the child sections horizontally */
+    align-items: center;
     padding: 2em;
     text-align: center;
 }
 
 .section {
-    background-color: #252525; /* Each section has a slightly lighter background than body for depth */
+    background-color: #252525; 
     margin: 1em auto;
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5); /* Soft shadow for 3D effect */
-    width: calc(100% - 4em); /* Adjust width as necessary */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.5); 
+    width: calc(100% - 4em); 
     text-align: left;
 }
 
 
 header, footer {
-    background-color: #1A1A1A; /* Slightly lighter than the body background for subtle contrast */
-    color: #FFFFFF; /* White text for headers and footers */
+    background-color: #1A1A1A; 
+    color: #FFFFFF:
     padding: 1em 0;
     text-align: center;
 }
@@ -74,21 +70,20 @@ footer {
 /* Add spacing between paragraphs */
 p {
     margin-bottom: 1em;
-    line-height: 1.6; /* Improved line height for readability */
+    line-height: 1.6; 
 }
 
-/* Additional styles for headings */
 h1, h2 {
-    margin: 0.5em 0; /* Space above and below headings */
+    margin: 0.5em 0; 
 }
 
 h1 {
-    font-size: 2.5rem; /* Larger font size for main heading */
+    font-size: 2.5rem; 
 }
 
 h2 {
-    font-size: 1.8rem; /* Smaller font size for subheading */
-    color: #555; /* Subtle color for subheading */
+    font-size: 1.8rem;
+    color: #555; 
 }
 
 .project {
@@ -97,7 +92,7 @@ h2 {
     background-color: #f7f7f7;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    max-width: 800px; /* Adjust as needed for your layout */
+    max-width: 800px; /
     text-align: left;
 }
 
